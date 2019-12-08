@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+        <link href="//db.onlinewebfonts.com/c/0421d4186d6efbfc5331fe180895e780?family=Harry+Potter" rel="stylesheet" type="text/css"/>
+<style> 
+@import url(//db.onlinewebfonts.com/c/0421d4186d6efbfc5331fe180895e780?family=Harry+Potter);
+@font-face {font-family: "Harry Potter"; src: url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.eot"); src: url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.woff") format("woff"), url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.svg#Harry Potter") format("svg"); }
+    h1 {
+        font-family: "Harry Potter";
+    }
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('images1/bg_2.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+   <a class="navbar-brand" href="index.html"><img class="img mx-0 brand-logo" src="images1/logo2.png" width="50" height="50"><img src="https://fontmeme.com/permalink/191007/32eeace98dc8719789a5800c9700f1b0.png" alt="samar-logo" border="0"></a>
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <p id="demo" style="font-size:30px"></p>
+  </div>
+  <div class="bottomleft">
+    <p>Get ready for central india's largest sports fest</p>
+  </div>
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 12, 2019 11:59:59").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "We are Live Now catch us on field";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>

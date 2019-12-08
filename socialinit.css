@@ -1,0 +1,37 @@
+
+
+.a1{
+  background-image: url("campus amb/img/h.jpg");
+  width:100%;
+  height:auto;
+  background-size:cover;
+  background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif;
+}
+.a2{
+  padding: 250px 0;
+  text-align: center;
+}
+.a3{
+  background-image: url("campus amb/img/h1.jpg");color: black;
+}
+
+.a4{
+  padding: 90px 0;
+}
+.a5{
+  background-image: url("campus amb/img/h3.jpg");color: black;background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+}
+.a6{
+  text-align: center;
+  padding-bottom:100px;
+font-family: 'Montserrat', sans-serif;
+background-image: url("campus amb/img/h4.jpg");color: white;background-size: cover;
+}
+@media only screen and (max-width: 360px){
+  img{
+    width:60%;
+    height:auto;
+  }
+}
